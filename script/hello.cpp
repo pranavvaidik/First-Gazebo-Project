@@ -2,16 +2,16 @@
 
 namespace gazebo
 {
-  class WorldPluginMyRobot : public WorldPlugin
+  class WorldPlugin_s : public WorldPlugin
   {
-    public: WorldPluginMyRobot() : WorldPlugin()
+    public: WorldPlugin_s() : WorldPlugin()
             {
-              printf("Welcome to Pranav's World");
+              printf("Welcome to 's World!\n");
             }
 
     public: void Load(physics::WorldPtr _world, sdf::ElementPtr _sdf)
             {
             }
   };
-  GZ_REGISTER_WORLD_PLUGIN(WorldPluginMyRobot)
+  GZ_REGISTER_WORLD_PLUGIN(WorldPlugin_s)
 }
